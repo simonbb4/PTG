@@ -12427,6 +12427,7 @@ Updated 01/16/2004&lt;/i&gt;&lt;/h4&gt;</description>
 <sheets>
 <sheet>
 <plain>
+<text x="119.38" y="-96.52" size="2.54" layer="94">Haley Boynton, Simon Konrad, Luke Banda</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-210.82" y="-124.46"/>

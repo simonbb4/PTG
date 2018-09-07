@@ -71,92 +71,53 @@
 </layers>
 <library>
 <packages>
-<package name="SSOP">
-<description>16 Pin SSOP Package</description>
-<wire x1="-2.45" y1="-1.95" x2="2.45" y2="-1.95" width="0.127" layer="51"/>
-<wire x1="2.45" y1="-1.95" x2="2.45" y2="1.95" width="0.127" layer="51"/>
-<wire x1="2.45" y1="1.95" x2="-2.45" y2="1.95" width="0.127" layer="51"/>
-<wire x1="-2.45" y1="1.95" x2="-2.45" y2="-1.95" width="0.127" layer="51"/>
-<wire x1="-2.45" y1="-1.95" x2="2.45" y2="-1.95" width="0.127" layer="21"/>
-<wire x1="2.45" y1="-1.95" x2="2.45" y2="1.95" width="0.127" layer="21"/>
-<wire x1="2.45" y1="1.95" x2="-2.45" y2="1.95" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="1.95" x2="-2.45" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.8" x2="-2.45" y2="-0.65" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="-0.65" x2="-2.45" y2="-1.95" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.8" x2="-2.45" y2="-0.65" width="0.127" layer="21" curve="-180"/>
-<text x="-2.95" y="3.8" size="1.27" layer="25" font="vector">&gt;Name</text>
-<smd name="12" x="0.3175" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="13" x="-0.3175" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="11" x="0.9525" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="14" x="-0.9525" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="10" x="1.5875" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="15" x="-1.5875" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="9" x="2.2225" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="16" x="-2.2225" y="2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="5" x="0.3175" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="4" x="-0.3175" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="6" x="0.9525" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="3" x="-0.9525" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="7" x="1.5875" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="2" x="-1.5875" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="8" x="2.2225" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
-<smd name="1" x="-2.2225" y="-2.7" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<package name="ROCKER_SWITCH">
+<description>3 Position Rocker Switch
+Side Facing</description>
+<wire x1="-6.5" y1="-6.4" x2="6.5" y2="-6.4" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-6.4" x2="6.5" y2="6.3" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="6.3" x2="-6.5" y2="-6.4" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-6.4" x2="6.5" y2="-6.4" width="0.127" layer="51"/>
+<wire x1="6.5" y1="-6.4" x2="6.5" y2="6.3" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="6.3" x2="-6.5" y2="-6.4" width="0.127" layer="51"/>
+<pad name="2" x="0" y="-6.4" drill="1.85"/>
+<pad name="3" x="4.7" y="-6.4" drill="1.85"/>
+<pad name="1" x="-4.7" y="-6.4" drill="1.85"/>
+<pad name="G1" x="-2.54" y="6.3" drill="1.85"/>
+<pad name="G2" x="2.54" y="6.3" drill="1.85"/>
+<text x="-7.22" y="9.47" size="1.27" layer="25" font="vector">&gt;Name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="PCM1748">
-<description>PCM1748</description>
-<pin name="BCK" x="-20.32" y="7.62" length="middle"/>
-<pin name="DATA" x="-20.32" y="5.08" length="middle"/>
-<pin name="LRCLK" x="-20.32" y="2.54" length="middle"/>
-<pin name="DGND" x="-20.32" y="0" length="middle"/>
-<pin name="VDD" x="-20.32" y="-2.54" length="middle"/>
-<pin name="VCC" x="-20.32" y="-5.08" length="middle"/>
-<pin name="VOUT_L" x="-20.32" y="-7.62" length="middle"/>
-<pin name="VOUT_R" x="-20.32" y="-10.16" length="middle"/>
-<pin name="AGND" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="VCOM" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="ZERO_R/ZEROA" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="ZERO_L/NA" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="MD" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="MC" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="ML" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="SCK" x="20.32" y="7.62" length="middle" rot="R180"/>
-<wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
-<wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
-<text x="-15.24" y="15.24" size="1.27" layer="95" font="vector">&gt;Name</text>
+<symbol name="3WAY_SW">
+<description>3 Position Rocker Switch</description>
+<pin name="2" x="-5.08" y="0" length="short" direction="out"/>
+<pin name="1" x="7.62" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" length="short" direction="in" rot="R180"/>
+<circle x="-1.524" y="0" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="4.064" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="4.064" y="-2.54" radius="0.915809375" width="0.254" layer="94"/>
+<text x="-2.54" y="4.572" size="1.27" layer="95" font="vector">&gt;Name</text>
+<wire x1="-1.524" y1="0" x2="4.064" y2="2.54" width="0.254" layer="94"/>
+<pin name="G" x="-5.08" y="-5.08" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PCM1748" prefix="IC">
-<description>PCM1748
-24 Bit 96kHz Sampling DAC
-5V Analog input
-3.3V Digital Input</description>
+<deviceset name="ROCKER_SWITCH" prefix="SW">
+<description>3 Position Rocker Switch
+On - Off - On
+Max 28V DC @5A
+Side Facing Switch</description>
 <gates>
-<gate name="G$1" symbol="PCM1748" x="0" y="0"/>
+<gate name="G$1" symbol="3WAY_SW" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="SSOP">
+<device name="" package="ROCKER_SWITCH">
 <connects>
-<connect gate="G$1" pin="AGND" pad="9"/>
-<connect gate="G$1" pin="BCK" pad="1"/>
-<connect gate="G$1" pin="DATA" pad="2"/>
-<connect gate="G$1" pin="DGND" pad="4"/>
-<connect gate="G$1" pin="LRCLK" pad="3"/>
-<connect gate="G$1" pin="MC" pad="14"/>
-<connect gate="G$1" pin="MD" pad="13"/>
-<connect gate="G$1" pin="ML" pad="15"/>
-<connect gate="G$1" pin="SCK" pad="16"/>
-<connect gate="G$1" pin="VCC" pad="6"/>
-<connect gate="G$1" pin="VCOM" pad="10"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VOUT_L" pad="7"/>
-<connect gate="G$1" pin="VOUT_R" pad="8"/>
-<connect gate="G$1" pin="ZERO_L/NA" pad="12"/>
-<connect gate="G$1" pin="ZERO_R/ZEROA" pad="11"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="G" pad="G1 G2"/>
 </connects>
 <technologies>
 <technology name=""/>

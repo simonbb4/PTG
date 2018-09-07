@@ -12290,52 +12290,6 @@ Updated 01/16/2004&lt;/i&gt;&lt;/h4&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="PowerInductor">
-<packages>
-<package name="VLCF4020">
-<wire x1="0" y1="0" x2="3.9" y2="0" width="0.127" layer="20"/>
-<wire x1="3.9" y1="0" x2="3.9" y2="4.5" width="0.127" layer="20"/>
-<wire x1="3.9" y1="4.5" x2="0" y2="4.5" width="0.127" layer="20"/>
-<wire x1="0" y1="4.5" x2="0" y2="0" width="0.127" layer="20"/>
-<smd name="1" x="1.95" y="0.8" dx="3.9" dy="1.6" layer="1" rot="R180"/>
-<smd name="2" x="1.95" y="3.7" dx="3.9" dy="1.6" layer="1" rot="R180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="L-US">
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
-<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PWR_L">
-<gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VLCF4020">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12354,8 +12308,8 @@ Updated 01/16/2004&lt;/i&gt;&lt;/h4&gt;</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="10.0k"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0603" value="332k"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0603" value="33.2k"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="10.0k"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="562k"/>
@@ -12494,7 +12448,7 @@ Updated 01/16/2004&lt;/i&gt;&lt;/h4&gt;</description>
 <part name="SUPPLY44" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="AGND" device=""/>
-<part name="L2" library="PowerInductor" deviceset="PWR_L" device="" value="3.3uH"/>
+<part name="L2" library="NewSDR" deviceset="L-US" device="0603" value="3.3uH"/>
 </parts>
 <sheets>
 <sheet>
